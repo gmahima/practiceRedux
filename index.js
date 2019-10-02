@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import PlayerReducer from './src/reducers/player';
 import Scoreboard from './src/containers/Scoreboard';
-
+import "./app.css";
 const store = createStore(
   PlayerReducer,
   window.devToolsExtension && window.devToolsExtension()

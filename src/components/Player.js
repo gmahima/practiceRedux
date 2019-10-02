@@ -1,11 +1,16 @@
-import React, { PropTypes } from 'react';
-import Counter from './Counter';
+import React, { PropTypes } from "react";
+import Counter from "./Counter";
 
 const Player = props => (
   <div className="player">
-    <div className="player-name">
-      <a className="remove-player"
-        onClick={() => props.removePlayer(props.index)}>
+    <div
+      className="player-name"
+      onClick={() => props.selectPlayer(props.index)}
+    >
+      <a
+        className="remove-player"
+        onClick={() => props.removePlayer(props.index)}
+      >
         ✖
       </a>
       {props.name}
